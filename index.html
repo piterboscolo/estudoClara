@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada de Estudos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header class="header-animation">
+            <div class="header-content">
+                <h1><i class="fas fa-star"></i> Jornada de Estudos <i class="fas fa-star"></i></h1>
+                <p class="subtitle">Clarinha! Hora da revisão. Bons Estudos filha! <i class="fas fa-pencil-alt"></i></p>
+            </div>
+        </header>
+
+        <div class="game-intro">
+            <p>Escolha um dos quizzes abaixo e divirta-se aprendendo!</p>
+        </div>
+
+        <div class="game-board">
+            <div class="path" id="historia-quiz">
+                <div class="path-header" style="background: linear-gradient(135deg, #4CAF50, #2E7D32);">
+                    <i class="fas fa-landmark"></i>
+                    <h2>História do Brasil</h2>
+                </div>
+                <div class="path-content">
+                    <p>Descubra os segredos do Brasil Colonial!</p>
+                    <button class="start-btn" data-path="historia">
+                        <i class="fas fa-play"></i> Jogar
+                    </button>
+                </div>
+            </div>
+
+            <div class="path" id="ciencias-quiz">
+                <div class="path-header" style="background: linear-gradient(135deg, #2196F3, #1565C0);">
+                    <i class="fas fa-flask"></i>
+                    <h2>Ciências</h2>
+                </div>
+                <div class="path-content">
+                    <p>Explore o incrível mundo da ciência!</p>
+                    <button class="start-btn" data-path="ciencias">
+                        <i class="fas fa-play"></i> Jogar
+                    </button>
+                </div>
+            </div>
+
+            <div class="path" id="portugues-quiz">
+                <div class="path-header" style="background: linear-gradient(135deg, #9C27B0, #6A1B9A);">
+                    <i class="fas fa-book"></i>
+                    <h2>Português</h2>
+                </div>
+                <div class="path-content">
+                    <p>Aventuras no mundo das palavras!</p>
+                    <button class="start-btn" data-path="portugues" disabled>
+                        <i class="fas fa-lock"></i> Em breve
+                    </button>
+                </div>
+            </div>
+
+            <div class="path" id="geografia-quiz">
+                <div class="path-header" style="background: linear-gradient(135deg, #FF9800, #EF6C00);">
+                    <i class="fas fa-globe-americas"></i>
+                    <h2>Geografia</h2>
+                </div>
+                <div class="path-content">
+                    <p>Conheça nosso planeta incrível!</p>
+                    <button class="start-btn" data-path="geografia" disabled>
+                        <i class="fas fa-lock"></i> Em breve
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Perguntas -->
+        <div id="questionModal" class="modal">
+            <div class="modal-content">
+                <button class="close-modal-btn">&times;</button>
+                <div class="modal-header">
+                    <h2>Quiz História do Brasil</h2>
+                    <div class="question-counter">
+                        <span id="questionNumber">1</span> / <span id="totalQuestions">10</span>
+                    </div>
+                </div>
+                <p id="questionText"></p>
+                <div id="optionsContainer" class="options-container"></div>
+                <div id="feedback" style="display: none;"></div>
+                <button id="nextButton" class="next-btn" style="display: none;">
+                    <i class="fas fa-arrow-right"></i> Próxima Pergunta
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal de Resultados -->
+        <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <button class="close-modal-btn">&times;</button>
+                <div id="resultText"></div>
+                <button id="restartButton" class="next-btn">
+                    <i class="fas fa-redo"></i> Jogar Novamente
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
