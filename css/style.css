@@ -544,6 +544,251 @@ header h1 {
     margin-top: 10px;
 }
 
+/* Quiz Navigation Buttons - Estilo Infantil */
+.quiz-header {
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-nav-btn {
+    background: #4e54c8;
+    border: 3px solid #8f94fb;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 0;
+    box-shadow: 0 4px 0 #3a3f9e, 0 6px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-nav-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-nav-btn:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 2px 0 #3a3f9e, 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-nav-btn i {
+    transition: all 0.3s ease;
+}
+
+.quiz-nav-btn:hover i {
+    transform: scale(1.2);
+}
+
+#closeQuizBtn {
+    background: #ff6b6b;
+    border-color: #ff8e8e;
+    box-shadow: 0 4px 0 #d63031, 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#closeQuizBtn:hover {
+    background: #ff5252;
+}
+
+#restartQuizBtn {
+    background: #4ecdc4;
+    border-color: #a7e6e1;
+    box-shadow: 0 4px 0 #36b1a8, 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#restartQuizBtn:hover {
+    background: #3dc9c0;
+}
+
+.question-counter {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #2c3e50;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-size: 1.2em;
+    min-width: 100px;
+    text-align: center;
+}
+
+.question-counter span {
+    color: #e74c3c;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.quiz-nav-btn {
+    background: #4e54c8;
+    border: 3px solid #8f94fb;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 0;
+    box-shadow: 0 4px 0 #3a3f9e, 0 6px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.quiz-nav-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 0 #3a3f9e, 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-nav-btn:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 2px 0 #3a3f9e, 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-nav-btn:hover::before {
+    transform: translateY(0);
+}
+
+.quiz-nav-btn i {
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de pulso para chamar atenção */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.quiz-nav-btn.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+/* Result Buttons - Estilo Infantil */
+.result-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.result-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    min-width: 180px;
+    justify-content: center;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+}
+
+.result-button i {
+    font-size: 1.3em;
+    transition: transform 0.3s ease;
+}
+
+.result-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+.result-button:hover i {
+    transform: scale(1.2);
+}
+
+.result-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de brilho ao passar o mouse */
+.result-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.result-button:hover::after {
+    left: 100%;
+}
+
+/* Cores específicas para cada botão */
+#homeButton {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+#restartButton {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+#chooseQuizButton {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+/* Efeito de pulso no botão de reiniciar */
+#restartButton {
+    animation: pulse 2s infinite;
+}
+
 .result-message {
     margin-top: 20px;
     padding: 15px;
@@ -753,6 +998,155 @@ header h1 {
     cursor: help;
     color: var(--secondary-color);
     margin-left: 5px;
+}
+
+/* Estilos do Quiz */
+#quizContainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.quiz-content {
+    margin-top: 20px;
+}
+
+#questionText {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.option-btn:hover:not(:disabled) {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.option-btn.correct {
+    background: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.option-btn.incorrect {
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+#explanationContainer {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#explanationContainer h4 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+#funFactText {
+    font-style: italic;
+    margin-top: 10px;
+    color: #6c757d;
+}
+
+.next-btn {
+    background: linear-gradient(45deg, #4CAF50, #2E7D32);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+    background: linear-gradient(45deg, #3e8e41, #1b5e20);
+    transform: translateY(-2px);
+}
+
+.next-btn:active {
+    transform: translateY(0);
+}
+
+
+/* Estilo para a tela de resultados */
+#resultContainer {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#resultContainer h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+.score-display {
+    margin: 30px 0;
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight: bold;
+    color: #2c3e50;
+    border: 5px solid #4CAF50;
+}
+
+#resultMessage {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.6;
 }
 
 .tooltip .tooltiptext {

@@ -11,12 +11,73 @@
 <body>
     <div class="stars"></div>
     <div class="container">
-        <header class="header-animation">
-            <div class="header-content">
-                <h1><i class="fas fa-star"></i> Jornada de Estudos <i class="fas fa-star"></i></h1>
-                <p class="subtitle">Clarinha! Hora da revisão. Bons Estudos filha! <i class="fas fa-pencil-alt"></i></p>
+        <!-- Tela Inicial -->
+        <div id="startScreen">
+            <header class="header-animation">
+                <div class="header-content">
+                    <h1><i class="fas fa-star"></i> Jornada de Estudos <i class="fas fa-star"></i></h1>
+                    <p class="subtitle">Clarinha! Hora da revisão. Bons Estudos filha! <i class="fas fa-pencil-alt"></i></p>
+                </div>
+            </header>
+        </div>
+
+        <!-- Tela do Quiz -->
+        <div id="quizContainer" style="display: none;">
+            <div class="quiz-header">
+                <div class="quiz-header-top">
+                    <button id="closeQuizBtn" class="quiz-nav-btn" title="Fechar Quiz">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="question-counter">
+                        <span id="questionNumber">1</span> / <span id="totalQuestions">10</span>
+                    </div>
+                    <button id="restartQuizBtn" class="quiz-nav-btn" title="Recomeçar Quiz">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+                <h2 id="quizTitle">Quiz</h2>
             </div>
-        </header>
+            
+            <div class="quiz-content">
+                <p id="questionText"></p>
+                <div id="optionsContainer" class="options-container"></div>
+                
+                <div id="explanationContainer" style="margin-top: 20px; display: none;">
+                    <div class="explanation-box">
+                        <h4>Explicação:</h4>
+                        <p id="explanationText"></p>
+                        <p class="fun-fact" id="funFactText"></p>
+                    </div>
+                </div>
+                
+                <button id="nextButton" class="next-btn" style="display: none; margin-top: 20px;">
+                    Próxima Pergunta <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Tela de Resultados -->
+        <div id="resultContainer" style="display: none; text-align: center; color: white;">
+            <h2>Quiz Concluído!</h2>
+            <div class="score-display">
+                <p>Sua pontuação:</p>
+                <div class="score-circle">
+                    <span id="score">0/0</span>
+                </div>
+            </div>
+            <p id="resultMessage" style="margin: 20px 0;"></p>
+            <div class="result-buttons">
+                <button id="homeButton" class="result-button" style="background-color: #3498db;">
+                    <i class="fas fa-home"></i> Início
+                </button>
+                <button id="restartButton" class="result-button" style="background-color: #2ecc71;">
+                    <i class="fas fa-redo"></i> Jogar Novamente
+                </button>
+                <button id="chooseQuizButton" class="result-button" style="background-color: #f39c12;">
+                    <i class="fas fa-list"></i> Escolher Outro Quiz
+                </button>
+            </div>
+        </div>
 
         <div class="game-intro">
             <p>Escolha um dos quizzes abaixo e divirta-se aprendendo!</p>
@@ -76,35 +137,7 @@
             </div>
         </div>
 
-        <!-- Modal de Perguntas -->
-        <div id="questionModal" class="modal">
-            <div class="modal-content">
-                <button class="close-modal-btn">&times;</button>
-                <div class="modal-header">
-                    <h2>Quiz História do Brasil</h2>
-                    <div class="question-counter">
-                        <span id="questionNumber">1</span> / <span id="totalQuestions">10</span>
-                    </div>
-                </div>
-                <p id="questionText"></p>
-                <div id="optionsContainer" class="options-container"></div>
-                <div id="feedback" style="display: none;"></div>
-                <button id="nextButton" class="next-btn" style="display: none;">
-                    <i class="fas fa-arrow-right"></i> Próxima Pergunta
-                </button>
-            </div>
-        </div>
-
-        <!-- Modal de Resultados -->
-        <div id="resultModal" class="modal">
-            <div class="modal-content">
-                <button class="close-modal-btn">&times;</button>
-                <div id="resultText"></div>
-                <button id="restartButton" class="next-btn">
-                    <i class="fas fa-redo"></i> Jogar Novamente
-                </button>
-            </div>
-        </div>
+        <!-- Os modais foram movidos para a estrutura principal do quiz -->
     </div>
 
     <script src="js/game.js"></script>

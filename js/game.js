@@ -258,124 +258,113 @@ const gameData = {
                 explanation: "O crescimento dos dentes de leite ocorre na primeira infância, não na puberdade. Na puberdade, ocorrem mudanças como o desenvolvimento dos caracteres sexuais secundários e o estirão de crescimento.",
                 funFact: "A puberdade geralmente começa entre os 8-13 anos nas meninas e 9-14 anos nos meninos!"
             },
-            {
-                question: "Qual glândula é conhecida como a 'glândula mestra' do corpo humano?",
-                options: [
-                    "Tireoide",
-                    "Hipófise",
-                    "Suprarrenal",
-                    "Pâncreas"
-                ],
-                correct: 1,
-                explanation: "A hipófise é chamada de 'glândula mestra' porque produz hormônios que controlam outras glândulas do corpo, como a tireoide, as suprarrenais e as gônadas.",
-                funFact: "Apesar de ter apenas o tamanho de uma ervilha, a hipófise é essencial para o crescimento e o metabolismo!"
-            },
-            // Sistema Glandular
-            {
-                question: "Qual dessas glândulas produz insulina?",
-                options: [
-                    "Tireoide",
-                    "Hipófise",
-                    "Pâncreas",
-                    "Suprarrenal"
-                ],
-                correct: 2,
-                explanation: "O pâncreas produz insulina, um hormônio que regula os níveis de glicose (açúcar) no sangue, permitindo que as células absorvam a glicose para obter energia.",
-                funFact: "A falta de insulina ou a resistência à sua ação causa o diabetes, uma doença que afeta como o corpo processa o açúcar no sangue."
-            },
-            // Nutrição
-            {
-                question: "Qual desses nutrientes é a principal fonte de energia para o corpo?",
-                options: [
-                    "Proteínas",
-                    "Carboidratos",
-                    "Gorduras",
-                    "Vitaminas"
-                ],
-                correct: 1,
-                explanation: "Os carboidratos são a principal fonte de energia do corpo, fornecendo glicose, que é o combustível preferido do cérebro e dos músculos.",
-                funFact: "O cérebro consome cerca de 20% da energia fornecida pelos carboidratos, mesmo representando apenas 2% do peso corporal!"
-            },
-            // Doenças e Defesas
-            {
-                question: "Qual dessas doenças é causada por vírus?",
-                options: [
-                    "Tuberculose",
-                    "Gripe",
-                    "Cólera",
-                    "Tétano"
-                ],
-                correct: 1,
-                explanation: "A gripe é causada pelo vírus influenza, enquanto a tuberculose e o tétano são causados por bactérias, e a cólera é causada por uma bactéria chamada Vibrio cholerae.",
-                funFact: "Os vírus da gripe sofrem mutações frequentes, por isso as vacinas precisam ser atualizadas anualmente para proteger contra as cepas em circulação!"
-            },
-            // Primeiros Socorros
-            {
-                question: "O que fazer em caso de queimadura de primeiro grau (leve)?",
-                options: [
-                    "Passar manteiga ou pasta de dente na área queimada",
-                    "Aplicar gelo diretamente na pele queimada",
-                    "Lavar com água corrente fria por 10-15 minutos",
-                    "Estourar as bolhas que se formarem"
-                ],
-                correct: 2,
-                explanation: "Em queimaduras leves, o correto é lavar com água corrente fria por 10-15 minutos para resfriar a área e aliviar a dor. Nunca se deve aplicar manteiga, pasta de dente ou gelo diretamente, nem estourar bolhas.",
-                funFact: "As queimaduras de primeiro grau afetam apenas a epiderme (camada mais superficial da pele), causando vermelhidão e dor, mas sem formar bolhas."
-            },
-            // Vitaminas e Nutrientes
-            {
-                question: "Qual vitamina é produzida pelo nosso corpo quando nos expomos ao sol?",
-                options: [
-                    "Vitamina A",
-                    "Vitamina C",
-                    "Vitamina D",
-                    "Vitamina K"
-                ],
-                correct: 2,
-                explanation: "A vitamina D é sintetizada na pele quando nos expomos à luz solar. Ela é essencial para a absorção de cálcio e fósforo, importantes para a saúde dos ossos e dentes.",
-                funFact: "Apenas 10-15 minutos de exposição solar, 2-3 vezes por semana, são suficientes para produzir a quantidade necessária de vitamina D!"
-            },
-            // Alimentos e Nutrientes
-            {
-                question: "Qual desses alimentos é uma boa fonte de ferro?",
-                options: [
-                    "Maçã",
-                    "Cenoura",
-                    "Feijão",
-                    "Alface"
-                ],
-                correct: 2,
-                explanation: "O feijão é uma excelente fonte de ferro não-heme, um mineral essencial para a produção de hemoglobina, que transporta oxigênio no sangue. As carnes são fontes de ferro heme, que é mais facilmente absorvido.",
-                funFact: "A vitamina C aumenta a absorção do ferro dos vegetais. Por isso, é recomendado consumir uma fruta cítrica (como laranja ou acerola) junto com as refeições!"
-            },
-            // Primeiros Socorros
-            {
-                question: "O que fazer em caso de sangramento nasal?",
-                options: [
-                    "Deitar de barriga para cima",
-                    "Inclinar a cabeça para trás",
-                    "Sentar e inclinar a cabeça levemente para frente, apertando o nariz",
-                    "Assoprar com força para limpar o nariz"
-                ],
-                correct: 2,
-                explanation: "Em caso de sangramento nasal, deve-se sentar e inclinar a cabeça levemente para frente, apertando as narinas por 5-10 minutos. Inclinar a cabeça para trás pode fazer o sangue escorrer para a garganta, causando engasgo.",
-                funFact: "O sangramento nasal é comum em crianças e geralmente não é grave. A maioria dos casos para sozinha em poucos minutos!"
-            },
-            // Sistema Endócrino
-            {
-                question: "Qual dessas glândulas produz o hormônio do crescimento?",
-                options: [
-                    "Tireoide",
-                    "Hipófise",
-                    "Pineal",
-                    "Suprarrenal"
-                ],
-                correct: 1,
-                explanation: "A hipófise anterior produz o hormônio do crescimento (GH), que estimula o crescimento dos ossos e tecidos do corpo. A deficiência desse hormônio pode causar nanismo, enquanto o excesso pode levar ao gigantismo.",
-                funFact: "O hormônio do crescimento é liberado principalmente durante o sono profundo, destacando a importância de uma boa noite de descanso para o crescimento adequado das crianças!"
-            }
-        ]
-    }
+          {
+            question: "O que ocorre com os meninos durante a puberdade?",
+            options: ["A voz se torna mais aguda", "Começam a menstruar", "Crescimento dos testículos e da voz mais grossa", "Aumento da quantidade de leite materno"],
+            correct: 2,
+            explanation: "Nos meninos, a puberdade traz aumento dos testículos, crescimento de pelos faciais e engrossamento da voz.",
+            funFact: "A mudança de voz nos meninos é causada pelo crescimento da laringe e das cordas vocais."
+          },
+          {
+            question: "Qual hormônio é responsável pelo início da puberdade?",
+            options: ["Insulina", "Testosterona", "Estrogênio", "GnRH (hormônio liberador de gonadotrofina)"],
+            correct: 3,
+            explanation: "O GnRH é liberado pelo hipotálamo e estimula a hipófise a produzir hormônios que ativam os ovários e testículos.",
+            funFact: "O GnRH age como o 'sinal de partida' do desenvolvimento da puberdade."
+          },
+          {
+            question: "Qual dessas glândulas está localizada no cérebro e regula o sono?",
+            options: ["Tireoide", "Hipófise", "Pineal", "Paratireoide"],
+            correct: 2,
+            explanation: "A glândula pineal produz melatonina, que regula o ciclo do sono e vigília.",
+            funFact: "Dormir no escuro total ajuda a glândula pineal a produzir mais melatonina!"
+          },
+          {
+            question: "O que fazem as glândulas sudoríparas?",
+            options: ["Produzem saliva", "Produzem hormônios sexuais", "Produzem leite materno", "Produzem suor para controlar a temperatura"],
+            correct: 3,
+            explanation: "As glândulas sudoríparas produzem suor, que ajuda a controlar a temperatura corporal e eliminar toxinas.",
+            funFact: "As pessoas têm entre 2 e 4 milhões de glândulas sudoríparas!"
+          },
+          {
+            question: "Qual glândula ajuda a regular o cálcio no corpo?",
+            options: ["Pineal", "Paratireoide", "Suprarrenal", "Timo"],
+            correct: 1,
+            explanation: "A paratireoide produz hormônios que ajudam a controlar os níveis de cálcio no sangue e nos ossos.",
+            funFact: "Apesar de pequenas, as paratireoides são essenciais para o funcionamento muscular e nervoso!"
+          },
+          {
+            question: "Qual desses alimentos é considerado um construtor do corpo?",
+            options: ["Arroz", "Óleo", "Frango", "Refrigerante"],
+            correct: 2,
+            explanation: "Alimentos construtores, como o frango, fornecem proteínas que ajudam na formação dos músculos e tecidos.",
+            funFact: "As proteínas são compostas por aminoácidos, os tijolos do nosso corpo!"
+          },
+          {
+            question: "Qual vitamina ajuda na coagulação do sangue?",
+            options: ["Vitamina A", "Vitamina C", "Vitamina D", "Vitamina K"],
+            correct: 3,
+            explanation: "A vitamina K é essencial para a coagulação do sangue, evitando sangramentos excessivos.",
+            funFact: "Ela é abundante em vegetais verde-escuros, como espinafre e couve!"
+          },
+          {
+            question: "Qual mineral ajuda a fortalecer ossos e dentes?",
+            options: ["Ferro", "Sódio", "Cálcio", "Zinco"],
+            correct: 2,
+            explanation: "O cálcio é essencial para a formação e manutenção dos ossos e dentes.",
+            funFact: "O leite é uma das principais fontes de cálcio!"
+          },
+          {
+            question: "Como a vacina protege nosso corpo?",
+            options: ["Matando os vírus diretamente", "Aumentando a temperatura do corpo", "Estimulando a produção de anticorpos", "Evaporando os germes"],
+            correct: 2,
+            explanation: "A vacina contém partes enfraquecidas de vírus ou bactérias, que ensinam o corpo a se defender produzindo anticorpos.",
+            funFact: "A vacina contra a varíola foi a primeira criada, por Edward Jenner, em 1796!"
+          },
+          {
+            question: "O que são anticorpos?",
+            options: ["Pequenas células que causam doenças", "Substâncias produzidas por vírus", "Defesas naturais do corpo contra germes", "Vitaminas do corpo humano"],
+            correct: 2,
+            explanation: "Anticorpos são proteínas produzidas pelo sistema imunológico para combater invasores como vírus e bactérias.",
+            funFact: "Eles funcionam como 'soldadinhos' que identificam e eliminam os invasores do nosso corpo!"
+          },
+          {
+            question: "Qual dessas doenças pode ser prevenida com vacina?",
+            options: ["Gripe", "Dor de cabeça", "Alergia", "Cárie"],
+            correct: 0,
+            explanation: "A gripe é causada por um vírus e pode ser prevenida com a vacina da gripe.",
+            funFact: "As vacinas são atualizadas anualmente por causa das mutações do vírus da gripe!"
+          },
+          {
+            question: "O que deve ser feito ao encontrar uma pessoa afogada?",
+            options: ["Esperar ela se levantar", "Puxar pela roupa com força", "Retirá-la da água e chamar ajuda imediatamente", "Sacudir a pessoa para ela acordar"],
+            correct: 2,
+            explanation: "A primeira ação é retirar a pessoa da água com segurança, iniciar respiração se necessário e chamar o socorro.",
+            funFact: "Nunca entre em água perigosa sozinho para tentar salvar alguém — chame um adulto ou os bombeiros."
+          },
+          {
+            question: "Como evitar acidentes com crianças de 0 a 5 anos?",
+            options: ["Deixar objetos pequenos ao alcance", "Evitar supervisão constante", "Manter produtos perigosos fora do alcance", "Permitir que brinquem na cozinha"],
+            correct: 2,
+            explanation: "Crianças pequenas exploram o mundo com as mãos e boca, por isso produtos tóxicos e objetos pequenos devem estar fora do alcance.",
+            funFact: "Muitas intoxicações acontecem por produtos de limpeza guardados em garrafas de refrigerante."
+          },
+          {
+            question: "O que fazer se alguém desmaiar?",
+            options: ["Sacudir a pessoa", "Oferecer comida rapidamente", "Deitá-la com as pernas elevadas e chamar ajuda", "Dar um susto para acordar"],
+            correct: 2,
+            explanation: "O ideal é deitar a pessoa com as pernas elevadas para melhorar a circulação e buscar ajuda médica.",
+            funFact: "Desmaios são causados por falta de sangue momentânea no cérebro e podem acontecer por calor, susto ou jejum."
+          },
+          {
+            question: "Em que ano foi inventada a vacina e por quem?",
+            options: ["1790, por Edward Jenner", "1800, por Louis Pasteur", "1750, por Alexander Fleming", "1796, por Robert Koch"],
+            correct: 0,
+            explanation: "De acordo com a apostila, a vacina foi inventada em 1790 por um médico inglês chamado Edward Jenner, que usou o vírus da varíola bovina para proteger contra a varíola humana.",
+            funFact: "Edward Jenner é considerado o 'pai da imunologia' e sua descoberta salvou milhões de vidas ao longo da história."
+        }
+    ]
+}
 };
 
 // Estado do jogo
@@ -387,27 +376,169 @@ let selectedOption = null;
 const questionText = document.getElementById('questionText');
 const optionsContainer = document.getElementById('optionsContainer');
 const nextButton = document.getElementById('nextButton');
-const feedback = document.getElementById('feedback');
-const questionModal = document.getElementById('questionModal');
-const resultModal = document.getElementById('resultModal');
+const explanationContainer = document.getElementById('explanationContainer');
+const explanationText = document.getElementById('explanationText');
+const funFactText = document.getElementById('funFactText');
+const scoreElement = document.getElementById('score');
+const resultMessage = document.getElementById('resultMessage');
+const questionModal = document.getElementById('quizContainer'); 
+const resultModal = document.getElementById('resultContainer');   
 const restartButton = document.getElementById('restartButton');
 const questionNumber = document.getElementById('questionNumber');
 const totalQuestions = document.getElementById('totalQuestions');
 
 // Inicia o quiz
 function startQuiz(quizType = 'historia') {
+    // Esconde todos os elementos primeiro
+    const startScreen = document.getElementById('startScreen');
+    const gameIntro = document.querySelector('.game-intro');
+    const gameBoard = document.querySelector('.game-board');
+    const stars = document.querySelector('.stars');
+    
+    // Oculta os elementos da tela inicial com transição suave
+    if (startScreen) {
+        startScreen.style.opacity = '0';
+        setTimeout(() => {
+            startScreen.style.display = 'none';
+        }, 200);
+    }
+    
+    if (gameIntro) {
+        gameIntro.style.opacity = '0';
+        setTimeout(() => {
+            gameIntro.style.display = 'none';
+        }, 200);
+    }
+    
+    if (gameBoard) {
+        gameBoard.style.opacity = '0';
+        setTimeout(() => {
+            gameBoard.style.display = 'none';
+        }, 200);
+    }
+    
+    // Garante que o fundo de estrelas fique atrás do quiz
+    if (stars) {
+        stars.style.zIndex = '-1';
+    }
+    
+    // Previne rolagem da página de fundo
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    
+    // Reseta o estado do jogo
     currentPath = quizType;
     currentQuestionIndex = 0;
     score = 0;
     selectedOption = null;
+    
+    // Limpa qualquer conteúdo anterior
+    if (optionsContainer) optionsContainer.innerHTML = '';
+    if (explanationContainer) explanationContainer.style.display = 'none';
+    if (nextButton) nextButton.style.display = 'none';
+    
+    // Mostra o container do quiz
+    if (questionModal) {
+        questionModal.style.display = 'block';
+        // Rola para o topo do quiz
+        questionModal.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Atualiza o título do quiz
+    const quizTitle = document.getElementById('quizTitle');
+    if (quizTitle) quizTitle.textContent = gameData[currentPath]?.title || 'Quiz';
+    
+    // Atualiza o contador de perguntas
+    updateQuestionCounter();
+    
+    // Mostra a primeira pergunta
     showQuestion();
-    questionModal.style.display = 'flex';
 }
 
-// Função para fechar todos os modais
+// Função para fechar todos os modais e voltar para a tela inicial
 function closeAllModals() {
+    // Esconde os containers de quiz e resultados
     questionModal.style.display = 'none';
     resultModal.style.display = 'none';
+    
+    // Mostra a tela inicial e o game board
+    document.getElementById('startScreen').style.display = 'block';
+    document.querySelector('.game-intro').style.display = 'block';
+    document.querySelector('.game-board').style.display = 'block';
+    
+    // Limpa qualquer estado do quiz
+    currentQuestionIndex = 0;
+    score = 0;
+    selectedOption = null;
+}
+
+// Elementos de navegação
+const closeQuizBtn = document.getElementById('closeQuizBtn');
+const restartQuizBtn = document.getElementById('restartQuizBtn');
+const homeButton = document.getElementById('homeButton');
+const chooseQuizButton = document.getElementById('chooseQuizButton');
+
+// Função para fechar todos os modais e restaurar o estado inicial
+function closeAllModals() {
+    // Recarrega a página para garantir que tudo volte ao estado inicial
+    // Usamos um pequeno atraso para permitir que a animação de clique seja concluída
+    setTimeout(() => {
+        window.location.href = window.location.pathname;
+    }, 150);
+}
+
+// Função para voltar para a tela inicial
+function goToHome() {
+    closeAllModals();
+    // Rola para o topo da página
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Função para atualizar o contador de perguntas
+function updateQuestionCounter() {
+    if (questionNumber && totalQuestions && gameData[currentPath]?.questions) {
+        questionNumber.textContent = currentQuestionIndex + 1;
+        totalQuestions.textContent = gameData[currentPath].questions.length;
+    }
+}
+
+// Função para reiniciar o quiz atual
+function restartCurrentQuiz() {
+    // Esconde o modal de resultados se estiver visível
+    if (resultModal) {
+        resultModal.style.display = 'none';
+    }
+    
+    // Reseta o estado do quiz
+    currentQuestionIndex = 0;
+    score = 0;
+    selectedOption = null;
+    
+    // Limpa os estilos das opções de resposta
+    const optionButtons = document.querySelectorAll('.option-btn');
+    optionButtons.forEach(button => {
+        button.classList.remove('correct', 'incorrect');
+        button.disabled = false;
+        button.style.pointerEvents = 'auto';
+    });
+    
+    // Limpa a explicação
+    if (explanationContainer) {
+        explanationContainer.style.display = 'none';
+    }
+    
+    // Esconde o botão de próxima pergunta
+    if (nextButton) {
+        nextButton.style.display = 'none';
+    }
+    
+    // Mostra a primeira pergunta
+    showQuestion();
+    
+    // Rola para o topo do quiz
+    if (questionModal) {
+        questionModal.scrollTo(0, 0);
+    }
 }
 
 // Event Listeners
@@ -447,28 +578,171 @@ document.addEventListener('DOMContentLoaded', () => {
             closeAllModals();
         }
     });
+
+    // Event listeners para os botões de navegação
+    if (closeQuizBtn) {
+        closeQuizBtn.addEventListener('click', closeAllModals);
+    }
+    
+    if (restartQuizBtn) {
+        restartQuizBtn.addEventListener('click', restartCurrentQuiz);
+    }
+    
+    if (homeButton) {
+        homeButton.addEventListener('click', goToHome);
+    }
+    
+    if (chooseQuizButton) {
+        chooseQuizButton.addEventListener('click', () => {
+            closeAllModals();
+            document.getElementById('startScreen').style.display = 'block';
+            document.querySelector('.game-intro').style.display = 'block';
+            document.querySelector('.game-board').style.display = 'block';
+        });
+    }
 });
+
+// Função para criar efeito de confete
+function createConfetti() {
+    const colors = ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7'];
+    const container = document.getElementById('quizContainer');
+    
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.style.position = 'absolute';
+        confetti.style.width = Math.random() * 10 + 5 + 'px';
+        confetti.style.height = Math.random() * 10 + 5 + 'px';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.top = '-20px';
+        confetti.style.zIndex = '1000';
+        confetti.style.borderRadius = '50%';
+        confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+        container.appendChild(confetti);
+        
+        // Remove o confete após a animação
+        setTimeout(() => {
+            confetti.remove();
+        }, 5000);
+    }
+    
+    // Adiciona a animação de queda
+    const style = document.createElement('style');
+    style.innerHTML = `
+        @keyframes fall {
+            to {
+                transform: translateY(calc(100vh + 20px)) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+// Função para mostrar a tela de resultados
+function showResults() {
+    const totalQuestions = gameData[currentPath].questions.length;
+    const percentage = Math.round((score / totalQuestions) * 100);
+    
+    // Atualiza a pontuação
+    document.getElementById('score').textContent = `${score}/${totalQuestions}`;
+    
+    // Define a mensagem com base na pontuação
+    let message = '';
+    let emoji = '';
+    
+    if (percentage >= 80) {
+        message = 'Excelente! Você é um verdadeiro especialista!';
+        emoji = '🏆';
+        createConfetti();
+    } else if (percentage >= 60) {
+        message = 'Muito bom! Continue assim!';
+        emoji = '🌟';
+    } else if (percentage >= 40) {
+        message = 'Bom trabalho! Você está no caminho certo!';
+        emoji = '✨';
+    } else {
+        message = 'Continue praticando! Você pode melhorar!';
+        emoji = '💪';
+    }
+    
+    document.getElementById('resultMessage').innerHTML = `${emoji} ${message} ${emoji}`;
+    
+    // Esconde o quiz e mostra os resultados
+    questionModal.style.display = 'none';
+    resultModal.style.display = 'block';
+    
+    // Adiciona animação ao container de resultados
+    resultModal.style.animation = 'bounceIn 0.8s';
+    
+    // Adiciona estilos de animação
+    const style = document.createElement('style');
+    style.innerHTML = `
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            60% { transform: scale(1.1); opacity: 1; }
+            80% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+    `;
+    document.head.appendChild(style);
+}
 
 // Mostra a pergunta atual
 function showQuestion() {
     const questionData = gameData[currentPath].questions[currentQuestionIndex];
     
-    // Atualiza o contador de perguntas
-    questionNumber.textContent = currentQuestionIndex + 1;
-    totalQuestions.textContent = gameData[currentPath].questions.length;
+    // Atualiza o contador de perguntas no cabeçalho
+    updateQuestionCounter();
+    
+    // Atualiza o contador de perguntas no modal
+    if (questionNumber) questionNumber.textContent = currentQuestionIndex + 1;
+    if (totalQuestions) totalQuestions.textContent = gameData[currentPath].questions.length;
     
     // Atualiza o título do quiz
-    document.querySelector('.modal-header h2').textContent = gameData[currentPath].title;
+    const quizTitle = document.getElementById('quizTitle');
+    if (quizTitle) quizTitle.textContent = gameData[currentPath]?.title || 'Quiz';
     
     // Atualiza o texto da pergunta
-    questionText.textContent = questionData.question;
+    if (questionText) questionText.textContent = questionData.question;
     
     // Limpa as opções anteriores
-    optionsContainer.innerHTML = '';
+    if (optionsContainer) optionsContainer.innerHTML = '';
     
-    // Esconde o feedback e o botão de próxima pergunta
-    feedback.style.display = 'none';
-    nextButton.style.display = 'none';
+    // Configura o botão de próxima pergunta
+    if (nextButton) {
+        nextButton.style.display = 'none';
+        nextButton.innerHTML = 'Próxima Pergunta <i class="fas fa-arrow-right"></i>';
+    }
+    
+    // Esconde a explicação
+    if (explanationContainer) explanationContainer.style.display = 'none';
+    
+    // Garante que os botões de navegação estejam visíveis
+    const quizHeader = document.querySelector('.quiz-header');
+    if (quizHeader) {
+        const navButtons = `
+            <div class="quiz-header-top">
+                <button id="closeQuizBtn" class="quiz-nav-btn" title="Fechar Quiz">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="question-counter">
+                    <span id="questionNumber">${currentQuestionIndex + 1}</span> / <span id="totalQuestions">${gameData[currentPath].questions.length}</span>
+                </div>
+                <button id="restartQuizBtn" class="quiz-nav-btn" title="Recomeçar Quiz">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+        `;
+        quizHeader.innerHTML = navButtons;
+        
+        // Reconfigura os event listeners dos botões
+        const closeBtn = document.getElementById('closeQuizBtn');
+        const restartBtn = document.getElementById('restartQuizBtn');
+        
+        if (closeBtn) closeBtn.addEventListener('click', closeAllModals);
+        if (restartBtn) restartBtn.addEventListener('click', restartCurrentQuiz);
+    }
     
     // Adiciona as opções de resposta
     questionData.options.forEach((option, index) => {
@@ -481,9 +755,6 @@ function showQuestion() {
         button.onclick = () => selectOption(button, index);
         optionsContainer.appendChild(button);
     });
-    
-    // Mostra o modal de pergunta
-    questionModal.style.display = 'flex';
     
     // Rola para o topo do modal
     questionModal.scrollTo(0, 0);
@@ -507,14 +778,17 @@ function selectOption(selectedButton, selectedIndex) {
         score++;
         
         // Mostra apenas a mensagem de acerto
-        feedback.innerHTML = `
-            <h3 style="color: #2e7d32;">
-                <i class="fas fa-check-circle"></i>
-                Parabéns! Você acertou!
-            </h3>
-        `;
-        
-        feedback.style.display = 'block';
+        if (explanationContainer) {
+            explanationContainer.innerHTML = `
+                <div class="feedback-content">
+                    <h3 style="color: #2e7d32; margin-top: 0; text-align: center;">
+                        <i class="fas fa-check-circle"></i>
+                        Parabéns! Você acertou!
+                    </h3>
+                </div>
+            `;
+            explanationContainer.style.display = 'block';
+        }
         
         // Avança automaticamente para a próxima pergunta após 1,5 segundos
         setTimeout(() => {
@@ -526,32 +800,48 @@ function selectOption(selectedButton, selectedIndex) {
         buttons[questionData.correct].classList.add('correct');
         
         // Mostra o feedback completo para respostas erradas
-        feedback.innerHTML = `
-            <h3 style="color: #c62828;">
-                <i class="fas fa-times-circle"></i>
-                Resposta Incorreta
-            </h3>
-            <div class="feedback-content">
-                <p>${questionData.explanation}</p>
-                <p class="fun-fact"><i class="fas fa-lightbulb"></i> ${questionData.funFact}</p>
-            </div>
-        `;
+        if (explanationContainer) {
+            explanationContainer.innerHTML = `
+                <div class="feedback-content">
+                    <h3 style="color: #c62828; margin-top: 0; text-align: center; margin-bottom: 15px;">
+                        <i class="fas fa-times-circle"></i>
+                        Resposta Incorreta
+                    </h3>
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                        <p style="margin: 0 0 10px 0; font-weight: 500;">${questionData.explanation}</p>
+                        <p class="fun-fact" style="margin: 0; font-style: italic; color: #6c757d;">
+                            <i class="fas fa-lightbulb" style="color: #ffc107;"></i> ${questionData.funFact}
+                        </p>
+                    </div>
+                    <button id="nextQuestionBtn" class="next-btn" style="width: 100%; margin-top: 10px;">
+                        Próxima Pergunta <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            `;
+            explanationContainer.style.display = 'block';
+            
+            // Adiciona o event listener ao botão de próxima pergunta
+            const nextBtn = document.getElementById('nextQuestionBtn');
+            if (nextBtn) {
+                nextBtn.addEventListener('click', nextQuestion);
+            }
+        }
         
-        feedback.style.display = 'block';
-        nextButton.style.display = 'block';
-        
-        // Rola suavemente até o feedback
-        feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // Rola suavemente até o final da pergunta
+        if (explanationContainer) {
+            explanationContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     }
 }
 
 // Vai para a próxima pergunta ou mostra o resultado
 function nextQuestion() {
-    currentQuestionIndex++;
-    
-    if (currentQuestionIndex < gameData[currentPath].questions.length) {
+    // Verifica se existe uma próxima pergunta
+    if (currentQuestionIndex + 1 < gameData[currentPath].questions.length) {
+        currentQuestionIndex++;
         showQuestion();
     } else {
+        // Se for a última pergunta, mostra os resultados
         showResults();
     }
 }
