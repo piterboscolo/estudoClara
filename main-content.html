@@ -1,0 +1,73 @@
+<!-- Conteúdo principal do site -->
+<div class="stars"></div>
+<div class="container" id="appContainer">
+    <div class="user-info" id="userInfo">
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            Sair
+        </button>
+    </div>
+
+    <header>
+        <h1>Jornada de Estudos</h1>
+        <p>Escolha uma matéria para começar a estudar:</p>
+    </header>
+
+    <main>
+        <div class="game-cards">
+            <div class="game-card" data-subject="portugues">
+                <img src="images/portugues.jpg" alt="Português">
+                <h3>Português</h3>
+                <p>Teste seus conhecimentos em língua portuguesa</p>
+                <button class="start-btn">Começar</button>
+            </div>
+            
+            <div class="game-card" data-subject="matematica">
+                <img src="images/matematica.jpg" alt="Matemática">
+                <h3>Matemática</h3>
+                <p>Desafie-se com problemas matemáticos</p>
+                <button class="start-btn">Em breve</button>
+            </div>
+            
+            <div class="game-card" data-subject="ciencias">
+                <img src="images/ciencias.jpg" alt="Ciências">
+                <h3>Ciências</h3>
+                <p>Explore o mundo da ciência</p>
+                <button class="start-btn">Em breve</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Modal de Resultado -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Resultado</h2>
+        <div id="resultContainer"></div>
+        <button id="restartBtn">Jogar Novamente</button>
+    </div>
+</div>
+
+<script>
+    // Configura o botão de logout
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+        if (confirm('Tem certeza que deseja sair?')) {
+            revokeAccess();
+            window.location.href = 'access.html';
+        }
+    });
+
+    // Configura os botões de início do jogo
+    document.querySelectorAll('.start-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const subject = this.closest('.game-card').dataset.subject;
+            if (subject === 'portugues') {
+                // Inicia o jogo de português
+                startGame('portugues');
+            } else {
+                alert('Em breve disponível!');
+            }
+        });
+    });
+</script>

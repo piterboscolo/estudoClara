@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Acesso ao Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+        .access-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 320px;
+        }
+        h1 {
+            color: #333;
+            margin: 0 0 15px 0;
+            font-size: 24px;
+        }
+        .access-form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin: 20px 0;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        input {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            display: block;
+        }
+        button {
+            width: 100%;
+            max-width: 200px;
+            margin: 15px auto 0;
+            padding: 10px 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: block;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .error-message {
+            color: #e74c3c;
+            margin: 10px 0;
+            min-height: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="access-container">
+        <h1>Acesso ao Conteúdo</h1>
+        <p>Digite o código de acesso para continuar</p>
+        
+        <div class="access-form">
+            <div class="form-group">
+                <input type="text" id="accessCode" placeholder="Código de acesso" required>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+            <button type="button" id="submitBtn">Acessar</button>
+        </div>
+    </div>
+
+    <script>
+        console.log('Script de acesso iniciado');
+        
+        // Verifica se o DOM já está carregado
+        if (document.readyState === 'loading') {
+            console.log('Aguardando DOM carregar...');
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('DOM carregado via event listener');
+                initAccessPage();
+            });
+        } else {
+            console.log('DOM já está carregado, inicializando...');
+            initAccessPage();
+        }
+        
+        function initAccessPage() {
+            console.log('Inicializando página de acesso');
+            
+            // Elementos
+            const accessCodeInput = document.getElementById('accessCode');
+            const errorMessage = document.getElementById('errorMessage');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Verifica se já está autenticado
+            if (localStorage.getItem('isAuthenticated') === 'true') {
+                console.log('Usuário já autenticado, redirecionando...');
+                window.location.href = 'index.html';
+                return;
+            }
+            
+            // Foca no campo de código
+            accessCodeInput.focus();
+            
+            // Formata o código em maiúsculas
+            accessCodeInput.addEventListener('input', function() {
+                this.value = this.value.toUpperCase();
+            });
+            
+            // Valida o código
+            function validateCode() {
+                const code = accessCodeInput.value.trim();
+                
+                if (!code) {
+                    errorMessage.textContent = 'Por favor, insira o código de acesso.';
+                    return false;
+                }
+                
+                if (code !== 'PAPIS1') {
+                    errorMessage.textContent = 'Código inválido. Tente novamente.';
+                    return false;
+                }
+                
+                errorMessage.textContent = '';
+                return true;
+            }
+            
+            // Evento de clique no botão
+            submitBtn.addEventListener('click', function() {
+                if (validateCode()) {
+                    // Autenticação bem-sucedida
+                    localStorage.setItem('isAuthenticated', 'true');
+                    
+                    // Mostra mensagem de sucesso
+                    submitBtn.textContent = 'Acesso liberado!';
+                    submitBtn.style.background = '#2e7d32';
+                    
+                    // Redireciona após um pequeno atraso
+                    setTimeout(function() {
+                        window.location.href = 'index.html';
+                    }, 1000);
+                }
+            });
+            
+            // Permite enviar com Enter
+            accessCodeInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    submitBtn.click();
+                }
+            });
+            
+            console.log('Página de acesso inicializada com sucesso');
+        } // Fecha a função initAccessPage
+        
+        console.log('Script de acesso carregado');
+    </script>
+</body>
+</html>

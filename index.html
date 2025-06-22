@@ -7,14 +7,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilo do botão de logout */
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        .logout-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .header-content {
+            position: relative;
+            padding-top: 40px;
+        }
+    </style>
 </head>
 <body>
+    <script>
+        console.log('Verificação de autenticação iniciada');
+        
+        function checkAuth() {
+            const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+            console.log('Status de autenticação:', isAuthenticated);
+            
+            if (!isAuthenticated) {
+                console.log('Usuário não autenticado, redirecionando para access.html');
+                window.location.href = 'access.html';
+            } else {
+                console.log('Usuário autenticado, continuando...');
+            }
+        }
+        
+        // Verifica se o DOM já está carregado
+        if (document.readyState === 'loading') {
+            console.log('Aguardando DOM carregar (index)...');
+            document.addEventListener('DOMContentLoaded', checkAuth);
+        } else {
+            console.log('DOM já está carregado, verificando autenticação...');
+            checkAuth();
+        }
+    </script>
     <div class="stars"></div>
     <div class="container">
         <!-- Tela Inicial -->
         <div id="startScreen">
             <header class="header-animation">
                 <div class="header-content">
+                    <button id="logoutBtn" class="logout-btn" title="Sair">
+                        <i class="fas fa-sign-out-alt"></i> Sair
+                    </button>
                     <h1><i class="fas fa-star"></i> Jornada de Estudos <i class="fas fa-star"></i></h1>
                     <p class="subtitle">Clarinha! Hora da revisão. Bons Estudos filha! <i class="fas fa-pencil-alt"></i></p>
                 </div>
@@ -141,5 +195,21 @@
     </div>
 
     <script src="js/game.js"></script>
+    <script>
+        // Gerenciamento do logout
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoutBtn = document.getElementById('logoutBtn');
+            
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Remove a autenticação
+                    localStorage.removeItem('isAuthenticated');
+                    // Redireciona para a página de acesso
+                    window.location.href = 'access.html';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
