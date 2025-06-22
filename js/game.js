@@ -363,8 +363,390 @@ const gameData = {
             explanation: "De acordo com a apostila, a vacina foi inventada em 1790 por um médico inglês chamado Edward Jenner, que usou o vírus da varíola bovina para proteger contra a varíola humana.",
             funFact: "Edward Jenner é considerado o 'pai da imunologia' e sua descoberta salvou milhões de vidas ao longo da história."
         }
-    ]
-}
+        ]
+    },
+    geografia: {
+        title: "Quiz de Geografia",
+        questions: [
+            // Rios brasileiros
+            {
+                question: "Qual é o rio mais extenso do Brasil?",
+                options: ["Rio Amazonas", "Rio São Francisco", "Rio Paraná", "Rio Tocantins"],
+                correct: 0,
+                explanation: "O Rio Amazonas é o mais extenso do Brasil e do mundo, com aproximadamente 6.992 km de extensão.",
+                funFact: "O Rio Amazonas despeja no oceano cerca de 209 milhões de litros de água por segundo!"
+            },
+            {
+                question: "Complete a frase: O Rio São Francisco nasce em ______ e deságua no Oceano ______.",
+                options: [
+                    "Bahia, Atlântico",
+                    "Minas Gerais, Pacífico",
+                    "Minas Gerais, Atlântico",
+                    "Bahia, Pacífico"
+                ],
+                correct: 2,
+                explanation: "O Velho Chico nasce na Serra da Canastra, em Minas Gerais, e percorre 2.830 km até desaguar no Oceano Atlântico.",
+                funFact: "O Rio São Francisco é conhecido como 'rio da integração nacional' por cortar cinco estados brasileiros!"
+            },
+            // Partes de um rio
+            {
+                question: "Qual parte do rio é conhecida como sua nascente?",
+                options: [
+                    "Onde o rio encontra o mar",
+                    "O ponto mais largo do rio",
+                    "O local onde o rio começa",
+                    "O trecho mais profundo do rio"
+                ],
+                correct: 2,
+                explanation: "A nascente é o local onde o rio tem seu início, geralmente em áreas de maior altitude.",
+                funFact: "Algumas nascentes do Brasil têm águas termais que podem chegar a 40°C!"
+            },
+            // Bacias hidrográficas
+            {
+                question: "Qual é a maior bacia hidrográfica do Brasil?",
+                options: [
+                    "Bacia do Rio São Francisco",
+                    "Bacia Amazônica",
+                    "Bacia do Rio Paraná",
+                    "Bacia do Rio Tocantins"
+                ],
+                correct: 1,
+                explanation: "A Bacia Amazônica é a maior do Brasil e do mundo, cobrindo cerca de 7 milhões de km².",
+                funFact: "A vazão média da Bacia Amazônica é maior que a soma das vazões dos 6 maiores rios do mundo juntos!"
+            },
+            // Climas brasileiros
+            {
+                question: "O clima tropical predomina no Brasil por causa da localização do país na zona intertropical.",
+                options: [
+                    "Verdadeiro",
+                    "Falso"
+                ],
+                correct: 0,
+                explanation: "Verdadeiro. O Brasil está localizado quase que inteiramente na zona intertropical, onde predominam climas quentes.",
+                funFact: "O Brasil é o único país cortado pelo Equador e pelo Trópico de Capricórnio!"
+            },
+            // Vegetações brasileiras
+            {
+                question: "Qual destes biomas é conhecido como 'Savana brasileira' e possui árvores de troncos retorcidos?",
+                options: [
+                    "Mata Atlântica",
+                    "Cerrado",
+                    "Caatinga",
+                    "Pantanal"
+                ],
+                correct: 1,
+                explanation: "O Cerrado é conhecido como a 'Savana brasileira' e possui árvores de troncos retorcidos, adaptadas ao clima com períodos de seca.",
+                funFact: "O Cerrado é considerado a savana mais rica em biodiversidade do mundo, abrigando cerca de 5% de todas as espécies do planeta!"
+            },
+            // Região Norte
+            {
+                question: "Qual é a capital do Amazonas?",
+                options: ["Belém", "Manaus", "Porto Velho", "Rio Branco"],
+                correct: 1,
+                explanation: "Manaus é a capital do Amazonas e a maior cidade da região Norte do Brasil.",
+                funFact: "Manaus é chamada de 'Paris dos Trópicos' por seu período áureo durante o ciclo da borracha!"
+            },
+            // Parques nacionais
+            {
+                question: "Qual desses parques nacionais NÃO está na Região Norte?",
+                options: [
+                    "Parque Nacional do Jaú",
+                    "Parque Nacional da Chapada dos Veadeiros",
+                    "Parque Nacional do Monte Roraima",
+                    "Parque Nacional da Amazônia"
+                ],
+                correct: 1,
+                explanation: "O Parque Nacional da Chapada dos Veadeiros está localizado em Goiás, na região Centro-Oeste do Brasil.",
+                funFact: "O Parque Nacional do Jaú é o maior parque de floresta tropical do mundo, com 2.367.333 hectares!"
+            },
+            // Diferença entre clima e tempo
+            {
+                question: "Qual é a diferença entre clima e tempo?",
+                options: [
+                    "Clima é o que acontece agora e tempo é a previsão para a semana",
+                    "Clima é o comportamento médio da atmosfera em longo prazo, tempo é o estado momentâneo",
+                    "Tempo é o que medimos em anos e clima em dias",
+                    "Não há diferença, os termos são sinônimos"
+                ],
+                correct: 1,
+                explanation: "O clima refere-se ao comportamento médio da atmosfera em um local durante um longo período (pelo menos 30 anos), enquanto o tempo é o estado momentâneo da atmosfera em um determinado local e momento.",
+                funFact: "Você sabia que o Brasil tem todos os tipos de clima do mundo, exceto o clima desértico e o clima polar?"
+            },
+            // Rios de planalto e planície
+            {
+                question: "Qual característica é típica dos rios de planalto?",
+                options: [
+                    "Pouco aproveitamento para geração de energia",
+                    "Pouco desnível ao longo do curso",
+                    "Grande potencial para navegação",
+                    "Grande desnível e quedas d'água"
+                ],
+                correct: 3,
+                explanation: "Os rios de planalto possuem desníveis acentuados e quedas d'água, sendo ideais para geração de energia hidrelétrica.",
+                funFact: "A Usina de Itaipu, no Rio Paraná, é a segunda maior usina hidrelétrica do mundo em geração de energia!"
+            },
+            // Regime dos rios - 1
+            {
+                question: "O que caracteriza um rio perene?",
+                options: [
+                    "Secam completamente em determinadas épocas do ano",
+                    "Mantêm água durante todo o ano, mesmo na estação seca",
+                    "Só possuem água durante e logo após as chuvas",
+                    "Mudam completamente de curso ao longo do ano"
+                ],
+                correct: 1,
+                explanation: "Rios perenes mantêm água durante todo o ano, mesmo na estação seca, pois são alimentados por lençóis freáticos ou derretimento de geleiras.",
+                funFact: "O Rio Amazonas é um exemplo de rio perene, mantendo seu volume durante todo o ano!"
+            },
+            // Regime dos rios - 2
+            {
+                question: "O que significa o período de vazante de um rio?",
+                options: [
+                    "Momento em que o rio atinge seu nível mais baixo",
+                    "Período em que o rio transborda suas margens",
+                    "Quando o rio está em seu nível normal",
+                    "Momento em que o rio seca completamente"
+                ],
+                correct: 0,
+                explanation: "A vazante é o período em que o rio atinge seu nível mais baixo, geralmente durante a estação seca, quando há menor volume de chuvas.",
+                funFact: "No Rio São Francisco, a diferença entre o período de cheia e vazante pode chegar a vários metros de altura!"
+            },
+            // Regime dos rios - 3
+            {
+                question: "O que caracteriza um rio de regime fluvial?",
+                options: [
+                    "Seu volume é determinado pelo derretimento de geleiras",
+                    "Sua vazão é controlada por chuvas em sua bacia hidrográfica",
+                    "É alimentado principalmente por águas subterrâneas",
+                    "Seca completamente em determinadas épocas do ano"
+                ],
+                correct: 1,
+                explanation: "Um rio de regime fluvial tem sua vazão determinada principalmente pelas chuvas que ocorrem em sua bacia hidrográfica, apresentando períodos de cheia e vazante conforme o regime de chuvas da região.",
+                funFact: "O Rio Amazonas tem um regime fluvial complexo, com diferentes períodos de cheia ao longo de seu curso!"
+            },
+            // Regime dos rios - 4
+            {
+                question: "O que são rios temporários ou intermitentes?",
+                options: [
+                    "Rios que mudam de nome ao longo do ano",
+                    "Rios que secam completamente em determinadas épocas",
+                    "Rios que correm apenas em direção ao mar",
+                    "Rios que não possuem nascente definida"
+                ],
+                correct: 1,
+                explanation: "Rios temporários ou intermitentes são aqueles que secam completamente em determinadas épocas do ano, geralmente durante a estação seca, voltando a ter água apenas na estação chuvosa.",
+                funFact: "Muitos rios do sertão nordestino são temporários, secando completamente na estação seca!"
+            },
+            // Regime dos rios - 5
+            {
+                question: "O que caracteriza o período de cheia de um rio?",
+                options: [
+                    "Quando o rio atinge seu menor volume de água",
+                    "Momento em que o rio seca completamente",
+                    "Período em que o rio atinge seu maior volume e transborda",
+                    "Quando o rio muda de curso repentinamente"
+                ],
+                correct: 2,
+                explanation: "O período de cheia ocorre quando o rio atinge seu maior volume de água, muitas vezes transbordando suas margens, geralmente na estação chuvosa ou durante o derretimento de geleiras.",
+                funFact: "As cheias anuais do Rio Amazonas podem alagar uma área de até 100 km de largura em algumas regiões!"
+            },
+            // Clima Brasileiro - 1
+            {
+                question: "Qual característica define o clima equatorial no Brasil?",
+                options: [
+                    "Invernos frios com geadas frequentes",
+                    "Temperaturas elevadas e chuvas bem distribuídas o ano todo",
+                    "Longos períodos de estiagem e vegetação de caatinga",
+                    "Verões quentes e invernos rigorosos com neve"
+                ],
+                correct: 1,
+                explanation: "O clima equatorial é caracterizado por temperaturas elevadas (médias anuais entre 24°C e 27°C) e chuvas abundantes e bem distribuídas ao longo do ano, típico da região amazônica.",
+                funFact: "Na Amazônia, a umidade do ar pode chegar a 90% e a diferença entre a temperatura mais alta e a mais baixa do ano é menor que a diferença entre o dia e a noite!"
+            },
+            // Clima Brasileiro - 2
+            {
+                question: "O clima tropical típico do Brasil central é caracterizado por:",
+                options: [
+                    "Duas estações bem definidas: inverno seco e verão chuvoso",
+                    "Chuvas constantes durante todo o ano",
+                    "Temperaturas abaixo de zero no inverno",
+                    "Ausência total de chuvas no verão"
+                ],
+                correct: 0,
+                explanation: "O clima tropical típico do Brasil central apresenta duas estações bem definidas: inverno seco (abril a setembro) e verão chuvoso (outubro a março), com temperaturas médias anuais entre 20°C e 28°C.",
+                funFact: "O Cerrado, bioma típico do clima tropical, é considerado a savana mais rica em biodiversidade do mundo!"
+            },
+            // Clima Brasileiro - 3
+            {
+                question: "O clima tropical semiárido, encontrado no Nordeste brasileiro, é marcado por:",
+                options: [
+                    "Chuvas abundantes o ano todo",
+                    "Longos períodos de estiagem e chuvas irregulares",
+                    "Temperaturas baixas durante todo o ano",
+                    "Nevascas frequentes no inverno"
+                ],
+                correct: 1,
+                explanation: "O clima tropical semiárido apresenta longos períodos de seca (até 11 meses por ano), chuvas escassas e irregulares, e temperaturas elevadas durante todo o ano, geralmente acima de 26°C.",
+                funFact: "O polígono das secas no Nordeste é maior que a área de muitos países europeus, como a França e a Espanha juntas!"
+            },
+            // Clima Brasileiro - 4
+            {
+                question: "O clima tropical úmido da costa brasileira se caracteriza por:",
+                options: [
+                    "Invernos muito frios com neve",
+                    "Alta pluviosidade e pequena amplitude térmica anual",
+                    "Ausência de chuvas durante o verão",
+                    "Temperaturas abaixo de zero no inverno"
+                ],
+                correct: 1,
+                explanation: "O clima tropical úmido da costa brasileira apresenta altos índices pluviométricos (acima de 1.500 mm/ano), pequena amplitude térmica anual (geralmente menos de 5°C) e temperaturas médias elevadas, acima de 22°C.",
+                funFact: "A Mata Atlântica, que ocorre nesse clima, é um dos biomas mais ameaçados do mundo, restando menos de 13% de sua cobertura original!"
+            },
+            // Clima Brasileiro - 5
+            {
+                question: "O clima subtropical do sul do Brasil se diferencia dos outros climas brasileiros por:",
+                options: [
+                    "Apresentar as quatro estações do ano bem definidas",
+                    "Ter apenas duas estações: verão e inverno",
+                    "Não ter variação de temperatura ao longo do ano",
+                    "Ter chuvas durante todo o ano sem estação seca"
+                ],
+                correct: 0,
+                explanation: "O clima subtropical, típico da região Sul do Brasil, apresenta as quatro estações bem definidas, com verões quentes, invernos frios (com ocorrência de geadas), e chuvas bem distribuídas ao longo do ano, sem uma estação seca definida.",
+                funFact: "Em algumas cidades serranas do Rio Grande do Sul e Santa Catarina, a temperatura pode chegar a -10°C no inverno, com ocorrência de neve em alguns anos!"
+            },
+            // Vegetação Brasileira - 1
+            {
+                question: "Qual característica NÃO está associada ao bioma da Mata Atlântica?",
+                options: [
+                    "Alta biodiversidade com muitas espécies endêmicas",
+                    "Vegetação adaptada a longos períodos de seca",
+                    "Floresta densa e perene",
+                    "Ocorrência de manguezais em áreas costeiras"
+                ],
+                correct: 1,
+                explanation: "A Mata Atlântica não é adaptada a longos períodos de seca. Pelo contrário, é um bioma úmido com chuvas bem distribuídas ao longo do ano e alta umidade do ar.",
+                funFact: "Apesar de ter mais de 90% de sua área original desmatada, a Mata Atlântica ainda abriga cerca de 20 mil espécies de plantas, sendo 8 mil delas endêmicas!"
+            },
+            // Vegetação Brasileira - 2
+            {
+                question: "O que caracteriza a vegetação do Cerrado?",
+                options: [
+                    "Árvores altas e copadas com troncos retilíneos",
+                    "Vegetação rasteira sem árvores",
+                    "Árvores de troncos tortuosos e casca grossa",
+                    "Florestas densas e úmidas"
+                ],
+                correct: 2,
+                explanation: "O Cerrado é caracterizado por árvores de troncos tortuosos, casca grossa e raízes profundas, adaptadas ao solo ácido e pobre em nutrientes, além de longos períodos de seca.",
+                funFact: "O Cerrado é considerado o berço das águas do Brasil, pois abriga as nascentes de importantes bacias hidrográficas como a do Rio São Francisco, Tocantins e Paraná!"
+            },
+            // Vegetação Brasileira - 3
+            {
+                question: "Qual característica é típica da Caatinga?",
+                options: [
+                    "Vegetação sempre verde e úmida",
+                    "Plantas com folhas pequenas ou transformadas em espinhos",
+                    "Árvores de grande porte com copas largas",
+                    "Solo permanentemente encharcado"
+                ],
+                correct: 1,
+                explanation: "A Caatinga apresenta vegetação adaptada à seca, com plantas que possuem folhas pequenas ou transformadas em espinhos para reduzir a perda de água, além de raízes profundas para buscar água no subsolo.",
+                funFact: "Apesar do aspecto seco, a Caatinga abriga mais de 1.000 espécies de animais, sendo 44 delas ameaçadas de extinção, como a arara-azul-de-lear e o tatu-bola!"
+            },
+            // Vegetação Brasileira - 4
+            {
+                question: "O que caracteriza o bioma Pantanal?",
+                options: [
+                    "Vegetação exclusivamente aquática",
+                    "Alternância entre períodos de cheia e seca",
+                    "Ausência de árvores",
+                    "Clima frio durante todo o ano"
+                ],
+                correct: 1,
+                explanation: "O Pantanal é caracterizado pela alternância entre períodos de cheia (quando grandes áreas ficam alagadas) e seca, o que cria uma rica biodiversidade adaptada a essas mudanças sazonais.",
+                funFact: "O Pantanal é considerado pela UNESCO como Patrimônio Natural Mundial e Reserva da Biosfera, abrigando a maior concentração de vida selvagem das Américas!"
+            },
+            // Vegetação Brasileira - 5
+            {
+                question: "O que é a Mata de Araucárias?",
+                options: [
+                    "Floresta de pinheiros típica do sul do Brasil",
+                    "Vegetação rasteira do litoral",
+                    "Floresta tropical úmida",
+                    "Vegetação de áreas alagadas"
+                ],
+                correct: 0,
+                explanation: "A Mata de Araucárias é uma formação florestal típica da região Sul do Brasil, dominada pelo pinheiro-do-paraná (Araucaria angustifolia), uma árvore de grande porte que pode atingir até 50 metros de altura.",
+                funFact: "Apesar de ser um símbolo do Paraná, o pinheiro-do-paraná também ocorre naturalmente em partes de Santa Catarina, Rio Grande do Sul e até em pequenas áreas de São Paulo e Minas Gerais!"
+            },
+            // Região Norte - 1 (Clima)
+            {
+                question: "Qual é o tipo climático predominante na maior parte da Região Norte do Brasil?",
+                options: [
+                    "Clima semiárido",
+                    "Clima equatorial úmido",
+                    "Clima tropical de altitude",
+                    "Clima subtropical"
+                ],
+                correct: 1,
+                explanation: "A Região Norte possui clima predominantemente equatorial úmido, caracterizado por altas temperaturas (médias anuais entre 24°C e 28°C) e elevada umidade do ar durante todo o ano, com chuvas abundantes e bem distribuídas.",
+                funFact: "Em algumas partes da Amazônia, a umidade do ar pode chegar a 90% e a diferença de temperatura entre o dia e a noite é maior que a diferença entre as estações do ano!"
+            },
+            // Região Norte - 2 (Vegetação)
+            {
+                question: "Qual destas NÃO é uma característica da Floresta Amazônica na Região Norte?",
+                options: [
+                    "Grande biodiversidade de espécies vegetais e animais",
+                    "Vegetação adaptada a longos períodos de seca",
+                    "Estratificação da vegetação em diferentes alturas",
+                    "Presença de árvores de grande porte e cipós"
+                ],
+                correct: 1,
+                explanation: "A Floresta Amazônica não é adaptada a longos períodos de seca. Pelo contrário, ela depende do clima úmido equatorial, com chuvas frequentes ao longo de todo o ano. A vegetação é perenifólia (sempre verde) e higrófila (adaptada à umidade).",
+                funFact: "A Amazônia abriga cerca de 2.500 espécies de árvores (um terço de toda a madeira tropical do mundo) e mais de 30 mil espécies de plantas das 100 mil da América do Sul!"
+            },
+            // Região Norte - 3 (Atividade Econômica)
+            {
+                question: "Qual é a principal atividade econômica da Zona Franca de Manaus?",
+                options: [
+                    "Agricultura de exportação",
+                    "Pecuária extensiva",
+                    "Indústria de transformação",
+                    "Extração de petróleo"
+                ],
+                correct: 2,
+                explanation: "A Zona Franca de Manaus é um importante polo industrial do Norte do Brasil, concentrando indústrias de eletrônicos, motocicletas, produtos químicos e bens de informática. Foi criada em 1967 para promover o desenvolvimento econômico da região amazônica.",
+                funFact: "A Zona Franca de Manaus é responsável por mais de 50% do PIB do Amazonas e gera mais de 500 mil empregos diretos e indiretos na região!"
+            },
+            // Região Norte - 4 (Agricultura)
+            {
+                question: "Qual destas culturas é tradicional na agricultura familiar da região Norte?",
+                options: [
+                    "Soja",
+                    "Café",
+                    "Mandioca",
+                    "Trigo"
+                ],
+                correct: 2,
+                explanation: "A mandioca é uma cultura tradicional na agricultura familiar da região Norte, sendo base da alimentação local na forma de farinha, tucupi, goma e outros derivados. É cultivada em pequenas propriedades usando técnicas tradicionais herdadas dos povos indígenas.",
+                funFact: "O estado do Pará é o maior produtor de mandioca do Brasil, com uma produção que ultrapassa 4 milhões de toneladas por ano, grande parte proveniente da agricultura familiar!"
+            },
+            // Região Norte - 5 (Folclore)
+            {
+                question: "Qual destas festas populares é típica da região Norte do Brasil?",
+                options: [
+                    "Festa do Peão de Boiadeiro",
+                    "Cirio de Nazaré e Festival de Parintins",
+                    "Festa da Uva",
+                    "Festa do Divino"
+                ],
+                correct: 1,
+                explanation: "Tanto o Círio de Nazaré quanto o Festival de Parintins são importantes manifestações culturais do Norte. O Círio, em Belém do Pará, é uma grande festa religiosa em homenagem a Nossa Senhora de Nazaré, enquanto o Boi de Parintins é um espetáculo folclórico que ocorre no Amazonas, conhecido pela disputa entre os bois Garantido e Caprichoso, com apresentações de dança, música e alegorias gigantes.",
+                funFact: "O Círio de Nazaré reúne cerca de 2 milhões de pessoas e é Patrimônio Cultural da Humanidade pela UNESCO, enquanto o Boi de Parintins, realizado em junho, atrai turistas do mundo todo para o Amazonas e é considerado o maior espetáculo ao ar livre do Brasil!"
+            }
+        ]
+    }
 };
 
 // Estado do jogo
@@ -744,17 +1126,79 @@ function showQuestion() {
         if (restartBtn) restartBtn.addEventListener('click', restartCurrentQuiz);
     }
     
-    // Adiciona as opções de resposta
-    questionData.options.forEach((option, index) => {
-        const button = document.createElement('button');
-        button.className = 'option-btn';
-        button.innerHTML = `
-            <span class="option-letter">${String.fromCharCode(65 + index)}.</span>
-            <span class="option-text">${option}</span>
+    // Adiciona as opções de resposta ou campo de preenchimento
+    if (questionData.type === 'fill') {
+        const inputContainer = document.createElement('div');
+        inputContainer.className = 'fill-container';
+        inputContainer.innerHTML = `
+            <input type="text" id="fillAnswer" class="fill-input" placeholder="Digite sua resposta aqui...">
+            <button id="submitFill" class="submit-btn">Enviar</button>
         `;
-        button.onclick = () => selectOption(button, index);
-        optionsContainer.appendChild(button);
-    });
+        optionsContainer.appendChild(inputContainer);
+        
+        const submitBtn = document.getElementById('submitFill');
+        const fillInput = document.getElementById('fillAnswer');
+        
+        submitBtn.onclick = () => {
+            const userAnswer = fillInput.value.trim();
+            const correctAnswer = questionData.answer.toLowerCase();
+            const isCorrect = userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+            
+            // Desabilita o input e o botão
+            fillInput.disabled = true;
+            submitBtn.disabled = true;
+            
+            // Mostra o feedback
+            if (explanationContainer) {
+                if (isCorrect) {
+                    score++;
+                    explanationContainer.innerHTML = `
+                        <div class="feedback-content">
+                            <h3 style="color: #2e7d32; margin-top: 0; text-align: center;">
+                                <i class="fas fa-check-circle"></i>
+                                Parabéns! Resposta correta!
+                            </h3>
+                            <p>${questionData.explanation}</p>
+                            <p class="fun-fact">${questionData.funFact || ''}</p>
+                        </div>
+                    `;
+                } else {
+                    explanationContainer.innerHTML = `
+                        <div class="feedback-content">
+                            <h3 style="color: #d32f2f; margin-top: 0; text-align: center;">
+                                <i class="fas fa-times-circle"></i>
+                                Resposta incorreta
+                            </h3>
+                            <p>A resposta correta é: <strong>${questionData.answer}</strong></p>
+                            <p>${questionData.explanation}</p>
+                            <p class="fun-fact">${questionData.funFact || ''}</p>
+                        </div>
+                    `;
+                }
+                explanationContainer.style.display = 'block';
+                nextButton.style.display = 'block';
+            }
+        };
+        
+        // Permite enviar com Enter
+        fillInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                submitBtn.click();
+            }
+        });
+    } else {
+        // Perguntas de múltipla escolha
+        questionData.options.forEach((option, index) => {
+            const button = document.createElement('button');
+            button.className = 'option-btn';
+            button.innerHTML = `
+                <span class="option-letter">${String.fromCharCode(65 + index)}.</span>
+                <span class="option-text">${option}</span>
+            `;
+            button.onclick = () => selectOption(button, index);
+            optionsContainer.appendChild(button);
+        });
+    }
     
     // Rola para o topo do modal
     questionModal.scrollTo(0, 0);
