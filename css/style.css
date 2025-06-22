@@ -546,6 +546,140 @@ header h1 {
     margin-top: 10px;
 }
 
+/* Results Screen Styles */
+#resultContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+#resultContainer h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.score-display {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4CAF50 0%,
+        #4CAF50 var(--percentage, 0%),
+        #f5f5f5 var(--percentage, 0%),
+        #f5f5f5 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: background 1s ease-in-out;
+}
+
+.score-circle::before {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#score {
+    font-size: 2.8em;
+    font-weight: 800;
+    color: #2c3e50;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#resultMessage {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+    margin: 20px 0 30px;
+    padding: 0 10px;
+}
+
+#resultMessage .result-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    display: block;
+    animation: bounce 1s ease infinite alternate;
+}
+
+#resultMessage .percentage {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgba(76, 175, 80, 0.1);
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.result-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.result-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.result-button i {
+    font-size: 1.1em;
+}
+
+.result-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.result-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
 /* Quiz Navigation Buttons - Estilo Infantil */
 .quiz-header {
     padding: 15px 20px;

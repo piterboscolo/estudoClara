@@ -365,6 +365,442 @@ const gameData = {
         }
         ]
     },
+    portugues: {
+        title: "Quiz de Língua Portuguesa",
+        questions: [
+            // 1. Locução Adjetiva
+            {
+                question: "Qual é a locução adjetiva na frase: 'A casa de pedra é antiga'?",
+                options: [
+                    "casa antiga",
+                    "de pedra",
+                    "é antiga",
+                    "a casa"
+                ],
+                correct: 1,
+                explanation: "'De pedra' é uma locução adjetiva que equivale ao adjetivo 'pétreo'.",
+                funFact: "Locução adjetiva é uma expressão formada por preposição + substantivo que funciona como adjetivo."
+            },
+            {
+                question: "Qual alternativa contém uma locução adjetiva?",
+                options: [
+                    "casa bonita",
+                    "cachorro feroz",
+                    "pássaro cantador",
+                    "copo de vidro"
+                ],
+                correct: 3,
+                explanation: "'De vidro' é uma locução adjetiva que equivale a 'vítreo'.",
+                funFact: "Locuções adjetivas são muito usadas no dia a dia para descrever características dos objetos."
+            },
+            {
+                question: "Qual é o adjetivo correspondente à locução 'de ouro'?",
+                options: ["dourado", "prateado", "bronzeado", "prateado"],
+                correct: 0,
+                explanation: "A locução 'de ouro' equivale ao adjetivo 'dourado'.",
+                funFact: "Muitas joias são feitas de ouro, que é um metal precioso."
+            },
+            {
+                question: "Qual é a locução adjetiva que equivale a 'ferroviário'?",
+                options: [
+                    "de trem",
+                    "de ferro",
+                    "de estrada",
+                    "de carro"
+                ],
+                correct: 0,
+                explanation: "'De trem' é a locução adjetiva que equivale a 'ferroviário'.",
+                funFact: "As primeiras estradas de ferro no Brasil foram construídas no século XIX."
+            },
+            {
+                question: "Qual alternativa NÃO contém uma locução adjetiva?",
+                options: [
+                    "copo de plástico",
+                    "cadeira de madeira",
+                    "casa bonita",
+                    "anel de prata"
+                ],
+                correct: 2,
+                explanation: "'Casa bonita' tem um adjetivo simples, não uma locução adjetiva.",
+                funFact: "As locuções adjetivas geralmente são formadas por preposição + substantivo."
+            },
+
+            // 2. Adjetivos
+            {
+                question: "Qual palavra é um adjetivo na frase: 'O gato preto pulou o muro alto'?",
+                options: ["gato", "preto", "pulou", "muro"],
+                correct: 1,
+                explanation: "'Preto' é um adjetivo que descreve a cor do gato.",
+                funFact: "Os adjetivos podem variar em gênero (masculino/feminino) e número (singular/plural)."
+            },
+            {
+                question: "Qual alternativa contém apenas adjetivos?",
+                options: [
+                    "rápido, lento, feliz",
+                    "correr, pular, nadar",
+                    "casa, escola, parque",
+                    "eu, ele, nós, vocês"
+                ],
+                correct: 0,
+                explanation: "'Rápido', 'lento' e 'feliz' são todos adjetivos que descrevem características.",
+                funFact: "Os adjetivos são palavras que caracterizam os substantivos."
+            },
+            {
+                question: "Qual é o grau superlativo de 'feliz'?",
+                options: ["felizão", "muito feliz", "felizinho", "felizardos"],
+                correct: 1,
+                explanation: "O grau superlativo de 'feliz' é 'muito feliz', que indica uma grande intensidade.",
+                funFact: "O superlativo pode ser de superioridade (muito feliz) ou de inferioridade (pouco feliz)."
+            },
+            {
+                question: "Qual alternativa contém um adjetivo no grau aumentativo?",
+                options: ["carrão", "casinha", "florzinha", "livreto"],
+                correct: 0,
+                explanation: "'Carrão' é o aumentativo de 'carro'.",
+                funFact: "O aumentativo pode indicar tamanho grande ou ser usado de forma afetiva."
+            },
+            {
+                question: "Qual é o feminino de 'ator'?",
+                options: ["atora", "atriz", "atrizes", "atores"],
+                correct: 1,
+                explanation: "O feminino de 'ator' é 'atriz'.",
+                funFact: "Muitas profissões têm formas diferentes para o masculino e feminino em português."
+            },
+
+            // 3. Adjetivos Pátrios
+            {
+                question: "Qual é o adjetivo pátrio de quem nasce na França?",
+                options: ["francês", "francense", "francano", "francino"],
+                correct: 0,
+                explanation: "Quem nasce na França é chamado de francês.",
+                funFact: "Os adjetivos pátrios também são conhecidos como gentílicos."
+            },
+            {
+                question: "Qual é o adjetivo pátrio de quem nasce em Portugal?",
+                options: ["português", "portugalense", "portugalês", "portugano"],
+                correct: 0,
+                explanation: "Quem nasce em Portugal é chamado de português.",
+                funFact: "O português é a língua oficial de Portugal, Brasil e mais 7 países."
+            },
+            {
+                question: "Qual é o adjetivo pátrio de quem nasce no Rio de Janeiro?",
+                options: ["carioca", "fluminense", "rio-janeirense", "rio-grandense"],
+                correct: 1,
+                explanation: "Quem nasce no estado do Rio de Janeiro é fluminense. Carioca é quem nasce na cidade do Rio.",
+                funFact: "O termo 'fluminense' vem do latim 'flumen', que significa rio."
+            },
+            {
+                question: "Qual é o adjetivo pátrio de quem nasce em São Paulo (capital)?",
+                options: ["paulista", "paulistano", "são-paulino", "são-paulense"],
+                correct: 1,
+                explanation: "Quem nasce na cidade de São Paulo é paulistano. Paulista é quem nasce no estado.",
+                funFact: "São Paulo é a maior cidade do Brasil e uma das maiores do mundo!"
+            },
+            {
+                question: "Qual é o adjetivo pátrio de quem nasce na Bahia?",
+                options: ["baiano", "baiense", "baiano/a", "baianense"],
+                correct: 0,
+                explanation: "Quem nasce na Bahia é chamado de baiano (masculino) ou baiana (feminino).",
+                funFact: "A Bahia foi o primeiro local onde os portugueses chegaram no Brasil em 1500."
+            },
+
+            // 4. Substantivos uniformes
+            {
+                question: "Qual destas palavras é um substantivo sobrecomum?",
+                options: ["a criança", "o artista", "a vítima", "o estudante"],
+                correct: 2,
+                explanation: "'Vítima' é um substantivo sobrecomum porque se refere a homens e mulheres sem mudar de forma.",
+                funFact: "Substantivos sobrecomuns têm uma única forma para os dois gêneros."
+            },
+            {
+                question: "Qual destas palavras é um substantivo comum de dois gêneros?",
+                options: ["o artista/a artista", "o/a estudante", "a vítima", "o jacaré/a jacaré"],
+                correct: 1,
+                explanation: "'Estudante' é comum de dois gêneros porque tem a mesma forma para masculino e feminino, mudando apenas o artigo.",
+                funFact: "Muitas profissões modernas usam substantivos comuns de dois gêneros."
+            },
+            {
+                question: "Qual destas palavras é um substantivo epiceno?",
+                options: ["o aluno/a aluna", "o jacaré", "o/a estudante", "a criança"],
+                correct: 1,
+                explanation: "'Jacaré' é um substantivo epiceno porque tem uma única forma para ambos os sexos.",
+                funFact: "Muitos nomes de animais são substantivos epicenos, como 'a cobra' e 'o tigre'."
+            },
+            {
+                question: "Qual alternativa contém um substantivo comum de dois gêneros?",
+                options: ["o menino/a menina", "o intérprete/a intérprete", "o leão/a leoa", "o ator/a atriz"],
+                correct: 1,
+                explanation: "'Intérprete' é comum de dois gêneros porque tem a mesma forma para masculino e feminino.",
+                funFact: "Muitas profissões terminadas em 'e' são comuns de dois gêneros."
+            },
+            {
+                question: "Qual destas palavras NÃO é um substantivo sobrecomum?",
+                options: ["a pessoa", "o cônjuge", "a testemunha", "o professor"],
+                correct: 3,
+                explanation: "'Professor' não é sobrecomum porque tem forma feminina: 'a professora'.",
+                funFact: "Substantivos sobrecomuns não variam em gênero, como 'a pessoa' e 'o cônjuge'."
+            },
+
+            // 5. Diminutivo e aumentativo
+            {
+                question: "Qual é o diminutivo de 'cão'?",
+                options: ["cãozinho", "cãozito", "cãzinho", "cãozão"],
+                correct: 0,
+                explanation: "O diminutivo de 'cão' é 'cãozinho'.",
+                funFact: "Em português, os sufixos mais comuns para formar o diminutivo são '-inho' e '-zinho'."
+            },
+            {
+                question: "Qual é o aumentativo de 'casa'?",
+                options: ["casão", "casinha", "casebre", "casota"],
+                correct: 0,
+                explanation: "O aumentativo de 'casa' é 'casão'.",
+                funFact: "O aumentativo pode indicar tamanho grande ou ser usado para expressar afeto ou desprezo."
+            },
+            {
+                question: "Qual destas palavras está no grau diminutivo?",
+                options: ["carrão", "livrão", "florzinha", "casaço"],
+                correct: 2,
+                explanation: "'Florzinha' está no diminutivo, formado pelo sufixo '-zinha'.",
+                funFact: "O sufixo '-zinho' é o mais usado para formar diminutivos em português."
+            },
+            {
+                question: "Qual é o aumentativo de 'homem'?",
+                options: ["homenzarrão", "homemzão", "homemão", "homenzarrão"],
+                correct: 0,
+                explanation: "O aumentativo de 'homem' é 'homenzarrão'.",
+                funFact: "Algumas palavras têm formas irregulares de aumentativo."
+            },
+            {
+                question: "Qual alternativa contém um diminutivo afetivo?",
+                options: ["carrão", "florzinha", "casota", "livrão"],
+                correct: 1,
+                explanation: "'Florzinha' é um diminutivo que expressa carinho ou afeto.",
+                funFact: "Os diminutivos são muito usados no português para expressar afeto ou diminuição de tamanho."
+            },
+
+            // 6. Singular e plural
+            {
+                question: "Qual é o plural de 'pão'?",
+                options: ["pães", "pãos", "pãoes", "pãos"],
+                correct: 0,
+                explanation: "O plural de 'pão' é 'pães'.",
+                funFact: "Palavras terminadas em '-ão' podem formar o plural de três maneiras: -ães, -ãos ou -ões."
+            },
+            {
+                question: "Qual é o plural de 'mão'?",
+                options: ["mãos", "mães", "mões", "mãs"],
+                correct: 0,
+                explanation: "O plural de 'mão' é 'mãos'.",
+                funFact: "'Mão' é uma palavra que vem do latim 'manus' e mantém uma forma irregular no plural."
+            },
+            {
+                question: "Qual é o plural de 'cidadão'?",
+                options: ["cidadãos", "cidadães", "cidadões", "cidadãs"],
+                correct: 0,
+                explanation: "O plural de 'cidadão' é 'cidadãos'.",
+                funFact: "As palavras terminadas em '-ão' geralmente formam o plural com '-ãos', '-ães' ou '-ões'."
+            },
+            {
+                question: "Qual é o plural de 'cão'?",
+                options: ["cães", "cãos", "cães/cãos", "cãs"],
+                correct: 0,
+                explanation: "O plural de 'cão' é 'cães'.",
+                funFact: "A forma 'cães' é a mais comum, mas 'cãos' também é aceita, embora menos usada."
+            },
+            {
+                question: "Qual é o plural de 'avião'?",
+                options: ["aviões", "aviães", "aviãos", "aviãs"],
+                correct: 0,
+                explanation: "O plural de 'avião' é 'aviões'.",
+                funFact: "A maioria das palavras terminadas em '-ão' forma o plural com '-ões'."
+            },
+
+            // 7. Sufixos -eza e -esa
+            {
+                question: "Qual palavra é formada pelo sufixo '-eza'?",
+                options: ["beleza", "natureza", "riqueza", "todas as alternativas"],
+                correct: 3,
+                explanation: "Todas as palavras terminam com o sufixo '-eza', que forma substantivos abstratos a partir de adjetivos.",
+                funFact: "O sufixo '-eza' é usado para formar substantivos que indicam qualidade ou estado."
+            },
+            {
+                question: "Qual palavra NÃO é formada pelo sufixo '-eza'?",
+                options: ["beleza", "riqueza", "natureza", "pobreza"],
+                correct: 2,
+                explanation: "'Natureza' não é formada por sufixo, é uma palavra primitiva.",
+                funFact: "'Natureza' vem do latim 'natura', enquanto as outras são formadas por derivação sufixal."
+            },
+            {
+                question: "Qual palavra é formada pelo sufixo '-esa'?",
+                options: ["princesa", "condessa", "duquesa", "todas as alternativas"],
+                correct: 3,
+                explanation: "Todas as palavras terminam com o sufixo '-esa', que forma substantivos femininos.",
+                funFact: "O sufixo '-esa' é usado para formar o feminino de algumas profissões ou títulos nobres."
+            },
+            {
+                question: "Qual é o feminino de 'conde'?",
+                options: ["condessa", "condesa", "conda", "condesa"],
+                correct: 0,
+                explanation: "O feminino de 'conde' é 'condessa'.",
+                funFact: "Algumas palavras têm formas irregulares para o feminino em português."
+            },
+            {
+                question: "Qual destas palavras NÃO é formada por sufixo?",
+                options: ["beleza", "pobreza", "natureza", "riqueza"],
+                correct: 2,
+                explanation: "'Natureza' é uma palavra primitiva, não é formada por sufixo.",
+                funFact: "É importante distinguir entre palavras primitivas e palavras derivadas em português."
+            },
+
+            // 8. Gênero do substantivo
+            {
+                question: "Qual é o feminino de 'ator'?",
+                options: ["atora", "atriz", "atores", "atrizes"],
+                correct: 1,
+                explanation: "O feminino de 'ator' é 'atriz'.",
+                funFact: "Algumas profissões têm formas diferentes para o masculino e feminino em português."
+            },
+            {
+                question: "Qual é o masculino de 'dona'?",
+                options: ["dono", "dom", "senhor", "dono/donato"],
+                correct: 0,
+                explanation: "O masculino de 'dona' é 'dono'.",
+                funFact: "'Dona' é usado como título de tratamento para mulheres, assim como 'Dom' para homens em alguns contextos."
+            },
+            {
+                question: "Qual destas palavras é do gênero masculino?",
+                options: ["caneta", "lápis", "mesa", "cadeira"],
+                correct: 1,
+                explanation: "'O lápis' é a única palavra masculina entre as opções.",
+                funFact: "Em português, os substantivos podem ser masculinos ou femininos."
+            },
+            {
+                question: "Qual é o feminino de 'poeta'?",
+                options: ["poetisa", "poeta", "poetiza", "poetisa/poeta"],
+                correct: 3,
+                explanation: "Tanto 'poetisa' quanto 'poeta' são aceitos como feminino de 'poeta'.",
+                funFact: "Algumas profissões têm formas específicas para o feminino, enquanto outras são comuns de dois gêneros."
+            },
+            {
+                question: "Qual destas palavras é do gênero feminino?",
+                options: ["mapa", "dia", "foto", "cinema"],
+                correct: 2,
+                explanation: "'A foto' é a única palavra feminina entre as opções.",
+                funFact: "Apesar de terminar em 'o', 'foto' é uma palavra feminina porque é uma abreviação de 'fotografia'."
+            },
+
+            // 9. Substantivos primitivos e derivados
+            {
+                question: "Qual palavra é primitiva em relação às outras?",
+                options: ["livro", "livraria", "livreto", "livrinho"],
+                correct: 0,
+                explanation: "'Livro' é a palavra primitiva; as outras são derivadas dela.",
+                funFact: "Palavras primitivas são aquelas que não derivam de outras palavras da língua."
+            },
+            {
+                question: "Qual palavra é derivada de 'mar'?",
+                options: ["marinho", "maré", "marítimo", "todas as alternativas"],
+                correct: 3,
+                explanation: "Todas as palavras são derivadas de 'mar'.",
+                funFact: "Uma palavra primitiva pode dar origem a várias palavras derivadas."
+            },
+            {
+                question: "Qual destas palavras é primitiva?",
+                options: ["casa", "casebre", "caseiro", "casinha"],
+                correct: 0,
+                explanation: "'Casa' é a palavra primitiva; as outras são derivadas dela.",
+                funFact: "As palavras derivadas são formadas a partir de palavras primitivas por meio de prefixos, sufixos ou ambos."
+            },
+            {
+                question: "Qual palavra NÃO é derivada de 'água'?",
+                options: ["aguaceiro", "águia", "aguado", "aguardente"],
+                correct: 1,
+                explanation: "'Águia' não é derivada de 'água'; é uma palavra independente.",
+                funFact: "Nem todas as palavras que começam com 'agu' são derivadas de 'água'."
+            },
+            {
+                question: "Qual palavra é derivada de 'paz'?",
+                options: ["pazada", "pazento", "pazada", "paz"],
+                correct: 1,
+                explanation: "'Pazento' é derivado de 'paz' com o acréscimo do sufixo '-ento'.",
+                funFact: "O sufixo '-ento' pode indicar posse de uma qualidade."
+            },
+
+            // 10. Singular, plural e plural do diminutivo
+            {
+                question: "Qual é o plural de 'carrinho'?",
+                options: ["carrinhos", "carriões", "carriços", "carrinhas"],
+                correct: 0,
+                explanation: "O plural de 'carrinho' é 'carrinhos'.",
+                funFact: "Os diminutivos em '-inho' formam o plural trocando o '-o' final por '-os'."
+            },
+            {
+                question: "Qual é o plural de 'florzinha'?",
+                options: ["florzinhas", "floreszinhas", "florinhas", "florzinhas"],
+                correct: 0,
+                explanation: "O plural de 'florzinha' é 'florzinhas'.",
+                funFact: "Os diminutivos em '-zinha' formam o plural trocando o '-a' final por '-as'."
+            },
+            {
+                question: "Qual é o plural de 'cãozinho'?",
+                options: ["cãeszinhos", "cãzinhos", "cãozinhos", "cãeszinhos"],
+                correct: 2,
+                explanation: "O plural de 'cãozinho' é 'cãozinhos'.",
+                funFact: "O plural dos diminutivos em '-zinho' segue a regra geral de formação de plural em português."
+            },
+            {
+                question: "Qual é o plural de 'livrinho'?",
+                options: ["livrinhos", "livrozinhos", "livrões", "livretos"],
+                correct: 0,
+                explanation: "O plural de 'livrinho' é 'livrinhos'.",
+                funFact: "O sufixo '-inho' é um dos mais produtivos na formação de diminutivos em português."
+            },
+            {
+                question: "Qual é o plural de 'copinho'?",
+                options: ["copinhos", "copinhas", "copões", "copinhos"],
+                correct: 0,
+                explanation: "O plural de 'copinho' é 'copinhos'.",
+                funFact: "Os diminutivos em '-inho' são muito usados no português para expressar afeto ou tamanho reduzido."
+            },
+
+            // 11. Substantivo composto e substantivo simples
+            {
+                question: "Qual destas palavras é um substantivo composto?",
+                options: ["guarda-chuva", "casa", "livro", "cadeira"],
+                correct: 0,
+                explanation: "'Guarda-chuva' é um substantivo composto formado por verbo + substantivo.",
+                funFact: "Os substantivos compostos são formados por mais de um radical."
+            },
+            {
+                question: "Qual destas palavras é um substantivo simples?",
+                options: ["pé-de-moleque", "guarda-roupa", "cachorro-quente", "livro"],
+                correct: 3,
+                explanation: "'Livro' é um substantivo simples, formado por apenas um radical.",
+                funFact: "Substantivos simples são formados por apenas um elemento mórfico."
+            },
+            {
+                question: "Qual destas palavras é um substantivo composto por verbo + substantivo?",
+                options: ["guarda-chuva", "couve-flor", "pé-de-moleque", "passatempo"],
+                correct: 0,
+                explanation: "'Guarda-chuva' é formado pelo verbo 'guardar' + substantivo 'chuva'.",
+                funFact: "Muitos substantivos compostos em português são formados por verbo + substantivo."
+            },
+            {
+                question: "Qual destas palavras é um substantivo composto por substantivo + adjetivo?",
+                options: ["couve-flor", "guarda-chuva", "pé-de-moleque", "passatempo"],
+                correct: 0,
+                explanation: "'Couve-flor' é formado por substantivo + adjetivo (couve que parece uma flor).",
+                funFact: "Em 'couve-flor', 'flor' funciona como adjetivo, descrevendo o tipo de couve."
+            },
+            {
+                question: "Qual destas palavras NÃO é um substantivo composto?",
+                options: ["guarda-chuva", "pé-de-moleque", "livro", "couve-flor"],
+                correct: 2,
+                explanation: "'Livro' é um substantivo simples, não um composto.",
+                funFact: "Os substantivos compostos podem ser escritos com hífen, juntos ou separados, dependendo da regra ortográfica."
+            }
+        ]
+    },
     geografia: {
         title: "Quiz de Geografia",
         questions: [
@@ -1278,6 +1714,7 @@ function selectOption(selectedButton, selectedIndex) {
     }
 }
 
+
 // Vai para a próxima pergunta ou mostra o resultado
 function nextQuestion() {
     // Verifica se existe uma próxima pergunta
@@ -1295,47 +1732,50 @@ function showResults() {
     const totalQuestions = gameData[currentPath].questions.length;
     const percentage = Math.round((score / totalQuestions) * 100);
     
-    // Define o ícone e mensagem com base na pontuação
-    let resultIcon, resultMessage;
+    // Atualiza a pontuação
+    document.getElementById('score').textContent = `${score}/${totalQuestions}`;
     
-    if (percentage >= 90) {
-        resultIcon = '🏆';
-        resultMessage = 'Excelente! Você é um verdadeiro especialista em História do Brasil!';
-    } else if (percentage >= 70) {
-        resultIcon = '🎉';
-        resultMessage = 'Muito bom! Continue assim e logo estará dominando todos os assuntos!';
-    } else if (percentage >= 50) {
-        resultIcon = '👍';
-        resultMessage = 'Bom trabalho! Com um pouco mais de estudo você vai longe!';
+    // Define a mensagem com base na pontuação
+    let message = '';
+    let emoji = '';
+    
+    if (percentage >= 80) {
+        message = 'Excelente! Você é um verdadeiro especialista!';
+        emoji = '🏆';
+        createConfetti();
+    } else if (percentage >= 60) {
+        message = 'Muito bom! Continue assim!';
+        emoji = '🌟';
+    } else if (percentage >= 40) {
+        message = 'Bom trabalho! Você está no caminho certo!';
+        emoji = '✨';
     } else {
-        resultIcon = '🤔';
-        resultMessage = 'Não desanime! Reveja o conteúdo e tente novamente para melhorar seu desempenho!';
+        message = 'Continue praticando! Você pode melhorar!';
+        emoji = '💪';
     }
     
-    // Atualiza o conteúdo do modal de resultado
-    const resultText = `
-        <div class="result-header">
-            <span class="result-icon">${resultIcon}</span>
-            <h2>Quiz Concluído!</h2>
-        </div>
-        <div class="result-score">
-            <div class="score-circle">
-                <span class="score-percent">${percentage}%</span>
-                <div class="score-circle-fill" style="--percentage: ${percentage}%;"></div>
-            </div>
-            <p class="score-text">${score} de ${totalQuestions} acertos</p>
-        </div>
-        <div class="result-message">
-            <p>${resultMessage}</p>
-        </div>
-    `;
+    document.getElementById('resultMessage').innerHTML = `${emoji} ${message} ${emoji}`;
     
-    document.getElementById('resultText').innerHTML = resultText;
+    // Esconde o quiz e mostra os resultados
     questionModal.style.display = 'none';
-    resultModal.style.display = 'flex';
+    resultModal.style.display = 'block';
+    
+    // Adiciona animação ao container de resultados
+    resultModal.style.animation = 'bounceIn 0.8s';
+    
+    // Adiciona estilos de animação
+    const style = document.createElement('style');
+    style.innerHTML = `
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            70% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    `;
+    document.head.appendChild(style);
     
     // Rola para o topo do modal de resultado
-    resultModal.scrollTo(0, 0);
+    resultModal.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Close modal
